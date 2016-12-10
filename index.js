@@ -17,7 +17,8 @@ module.exports = (configFolderPath, options) => {
   }
 
   options = assign({
-    debug: false
+    debug: false,
+    NODE_ENV: null
   }, options);
 
   const env = process.env.NODE_ENV || options.NODE_ENV || 'development';
